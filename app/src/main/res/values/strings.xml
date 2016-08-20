@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Bombae</string>
     <string name="number_hint">Enter the mobile number here...</string>
+    <string name="text_hint">Enter the text message here...</string>
 </resources>
