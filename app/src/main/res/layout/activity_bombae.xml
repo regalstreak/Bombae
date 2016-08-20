@@ -2,21 +2,19 @@
 <android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:background="@color/cyan_600"
-            android:paddingTop="80dp"
-            android:paddingBottom="40dp"
-            android:paddingRight="20dp"
-            android:paddingLeft="20dp">
+            android:layout_weight="33">
 
             <EditText
                 android:layout_width="match_parent"
@@ -34,18 +32,32 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/cyan_400"
-            android:paddingTop="40dp"
-            android:paddingBottom="40dp"
-            android:paddingRight="20dp"
-            android:paddingLeft="20dp">
+            android:layout_height="0dp"
+            android:layout_weight="34"
+            android:background="@color/cyan_500">
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:maxLines="3"
                 android:hint="@string/text_hint"
+                android:textColorHint="@color/cyan_100"
+                android:textColor="@color/cyan_50"
+                android:backgroundTint="@color/cyan_50"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="33"
+            android:background="@color/cyan_700">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:hint="@string/times_hint"
                 android:textColorHint="@color/cyan_100"
                 android:textColor="@color/cyan_50"
                 android:backgroundTint="@color/cyan_50"/>
