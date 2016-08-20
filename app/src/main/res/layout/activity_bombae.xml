@@ -68,11 +68,13 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:maxLines="3"
+                android:maxLines="1"
                 android:hint="@string/times_hint"
                 android:textColorHint="@color/cyan_100"
                 android:textColor="@color/cyan_50"
-                android:backgroundTint="@color/cyan_50"/>
+                android:backgroundTint="@color/cyan_50"
+                android:inputType="number"
+                android:digits="0123456789"/>
 
         </LinearLayout>
 
