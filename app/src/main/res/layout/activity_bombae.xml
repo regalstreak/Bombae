@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl1"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <LinearLayout
+        android:id="@+id/holder"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:weightSum="100">
 
         <LinearLayout
+            android:id="@+id/mobileno"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:background="@color/cyan_600"
@@ -21,6 +25,7 @@
             android:paddingBottom="20dp">
 
             <EditText
+                android:id="@+id/mobilenotxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:maxLines="1"
@@ -35,6 +40,7 @@
 
 
         <LinearLayout
+            android:id="@+id/msg"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="34"
@@ -45,6 +51,7 @@
             android:paddingBottom="20dp">
 
             <EditText
+                android:id="@+id/msgtxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:maxLines="6"
@@ -56,6 +63,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/times"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="33"
@@ -66,6 +74,7 @@
             android:paddingBottom="20dp">
 
             <EditText
+                android:id="@+id/timestxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:maxLines="1"
