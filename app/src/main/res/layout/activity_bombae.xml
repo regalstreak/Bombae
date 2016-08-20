@@ -45,7 +45,7 @@
             android:layout_height="0dp"
             android:layout_weight="34"
             android:background="@color/cyan_500"
-            android:paddingTop="78dp"
+            android:paddingTop="70dp"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
             android:paddingBottom="20dp">
@@ -67,7 +67,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="33"
-            android:background="@color/cyan_700"
+            android:background="@color/cyan_400"
             android:paddingTop="40dp"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
@@ -94,8 +94,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|right"
         android:layout_margin="22dp"
-        android:background="@color/colorPrimaryDark"
-        />
+        app:backgroundTint="@color/purple_300"/>
 
 
 </android.support.design.widget.CoordinatorLayout>
