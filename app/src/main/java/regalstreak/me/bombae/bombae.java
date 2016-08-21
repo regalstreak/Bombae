@@ -78,7 +78,6 @@ public class bombae extends AppCompatActivity {
         AlertDialog.Builder warning = new AlertDialog.Builder(this);
         warning.setTitle(R.string.warning)
                .setMessage(alert)
-               .setIcon(R.drawable.ic_warning_black_24dp)
                .show();
     }
 
