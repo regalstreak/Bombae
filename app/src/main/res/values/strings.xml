@@ -9,4 +9,6 @@
 
     <!-- Snackbars -->
     <string name="number_error">Mobile number cannot be empty!</string>
+    <string name="text_error">Text message to bomb cannot be empty!</string>
+    <string name="times_error">Number of times to bomb cannot be empty!</string>
 </resources>

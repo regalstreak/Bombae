@@ -27,20 +27,41 @@ public class bombae extends AppCompatActivity {
         coordinatorLayout = (CoordinatorLayout) findViewById(R.id.cl1);
     }
 
-    public void startBomb(View view){
+    public void checkEmpty(View view){
 
+        // Declare the strings
         String number,text,times;
 
+        // Start by getting the mobile number.
         number = mobilenotxt.getText().toString();
 
         if(number != null && !number.isEmpty()){
 
-            Toast.makeText(this, "Hello", Toast.LENGTH_SHORT).show();
+            // Number wasn't empty. Get the text message to send.
+            text = msgtxt.getText().toString();
 
-        }else{
-            Snackbar.make(coordinatorLayout, R.string.number_error, Snackbar.LENGTH_LONG).show();
+            if(text != null && !text.isEmpty()){
+                // Text wasn't empty. Get the number of times.
+                times = timestxt.getText().toString();
 
+                if(times != null && !times.isEmpty()){
+                    // Times wasn't empty. Alert the bomber.
+                    Toast.makeText(this, "More code will be placed here lol.", Toast.LENGTH_LONG).show();
+                    // TODO: Write more here
+                }
+                else{
+                    // Times was empty, throw a snackbar.
+                    Snackbar.make(coordinatorLayout, R.string.times_error, Snackbar.LENGTH_LONG).show();
+                }
+            }
+            else{
+                // Text was empty, throw a snackbar.
+                Snackbar.make(coordinatorLayout, R.string.text_error, Snackbar.LENGTH_LONG).show();
+            }
         }
-
+        else{
+            // Number was empty, throw a snackbar.
+            Snackbar.make(coordinatorLayout, R.string.number_error, Snackbar.LENGTH_LONG).show();
+        }
     }
 }

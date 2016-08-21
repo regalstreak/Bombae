@@ -95,7 +95,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|right"
         android:clickable="true"
-        android:onClick="startBomb"
+        android:onClick="checkEmpty"
         android:layout_margin="22dp"
         android:src="@drawable/ic_send_white_24dp"
         app:backgroundTint="@color/purple_300"/>
