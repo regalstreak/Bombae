@@ -1,5 +1,6 @@
 package regalstreak.me.bombae;
 
+import android.content.DialogInterface;
 import android.content.res.Resources;
 import android.support.annotation.NonNull;
 import android.support.design.widget.CoordinatorLayout;
@@ -79,9 +80,21 @@ public class bombae extends AppCompatActivity {
         warning.setTitle(R.string.warning)
                .setMessage(alert)
                .setIcon(R.drawable.ic_warning_grey_500_18dp)
+               .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
+                   @Override
+                   public void onClick(DialogInterface dialogInterface, int i) {
+                       // Yes is pressed. Start the bombing.
+
+                   }
+               })
+               .setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
+                   @Override
+                   public void onClick(DialogInterface dialogInterface, int i) {
+                       // No is pressed. Do nothing.
+                   }
+               })
                .show();
     }
-
 
 
 }

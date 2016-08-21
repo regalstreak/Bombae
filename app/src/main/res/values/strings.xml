@@ -15,4 +15,6 @@
     <!-- Alert Box -->
     <string name="warning">Warning</string>
     <string name="alert_msg">Are you sure you want to send &lt;b>%1$s&lt;/b> text messages to the phone number &lt;b>%2$s&lt;/b>?</string>
+    <string name="yes">Yeah</string>
+    <string name="no">Nope</string>
 </resources>
