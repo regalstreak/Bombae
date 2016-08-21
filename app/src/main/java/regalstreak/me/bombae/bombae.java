@@ -84,6 +84,7 @@ public class bombae extends AppCompatActivity {
                    @Override
                    public void onClick(DialogInterface dialogInterface, int i) {
                        // Yes is pressed. Start the bombing.
+                       startBomb(coordinatorLayout);
 
                    }
                })
@@ -94,6 +95,11 @@ public class bombae extends AppCompatActivity {
                    }
                })
                .show();
+    }
+
+    public void startBomb(View view){
+        // Show a toast that we have started
+        Toast.makeText(this, R.string.start_bomb, Toast.LENGTH_LONG).show();
     }
 
 
