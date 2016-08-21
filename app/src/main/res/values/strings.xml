@@ -1,6 +1,12 @@
 <resources>
+    <!-- App Name -->
     <string name="app_name">Bombae</string>
+
+    <!-- Main -->
     <string name="number_hint">Enter the mobile number here...</string>
     <string name="text_hint">Enter the text message here...</string>
     <string name="times_hint">Enter the number of times to send the message...</string>
+
+    <!-- Snackbars -->
+    <string name="number_error">Mobile number cannot be empty!</string>
 </resources>

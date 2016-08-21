@@ -90,9 +90,12 @@
     </LinearLayout>
 
     <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|right"
+        android:clickable="true"
+        android:onClick="startBomb"
         android:layout_margin="22dp"
         android:src="@drawable/ic_send_white_24dp"
         app:backgroundTint="@color/purple_300"/>
