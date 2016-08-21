@@ -8,6 +8,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.telephony.SmsManager;
 import android.text.Html;
 import android.view.View;
 import android.widget.EditText;
@@ -100,6 +101,20 @@ public class bombae extends AppCompatActivity {
     public void startBomb(View view){
         // Show a toast that we have started
         Toast.makeText(this, R.string.start_bomb, Toast.LENGTH_LONG).show();
+
+        // Initialise smsManager
+        SmsManager smsManager = SmsManager.getDefault();
+
+        // Convert times string into an integer
+        int timesint = Integer.parseInt(times);
+
+        int i=0;
+        while( i <= timesint ){
+            smsManager.sendTextMessage(number, null, text, null, null);
+            i++;
+        }
+
+        Snackbar.make(coordinatorLayout, R.string.done_bomb, Snackbar.LENGTH_LONG).show();
     }
 
 

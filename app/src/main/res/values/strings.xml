@@ -20,4 +20,5 @@
 
     <!-- Bomber -->
     <string name="start_bomb">Bombing has begun!</string>
+    <string name="done_bomb">Bombing has successfully completed!</string>
 </resources>
