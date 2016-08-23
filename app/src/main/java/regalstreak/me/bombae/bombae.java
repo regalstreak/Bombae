@@ -109,7 +109,7 @@ public class bombae extends AppCompatActivity {
         int timesint = Integer.parseInt(times);
 
         int i=0;
-        while( i <= timesint ){
+        while( i < timesint ){
             smsManager.sendTextMessage(number, null, text, null, null);
             i++;
         }
